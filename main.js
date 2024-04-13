@@ -1,7 +1,5 @@
 const mainPage = document.getElementById("app");
-console.log("hello world");
 const route = (event) => {
-  event = window.event || event;
   event.preventDefault();
   window.history.pushState(null, null, event.target.href);
   handleLocation();
